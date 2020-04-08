@@ -1,6 +1,6 @@
 {
   "name": "@popsure/models",
-  "version": "0.0.1",
+  "version": "0.0.1--alpha",
   "author": "Vincent Audoire <vincent@getpopsure.com>",
   "license": "MIT",
   "private": false,
@@ -8,6 +8,10 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "https://github.com/getPopsure/models",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "release": "yarn build && yarn publish --access public"
+  },
   "devDependencies": {
     "prettier": "2.0.4"
   }
