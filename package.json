@@ -1,6 +1,6 @@
 {
   "name": "@popsure/public-models",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Vincent Audoire <vincent@getpopsure.com>",
   "license": "MIT",
   "private": false,
@@ -13,6 +13,7 @@
     "release": "yarn build && yarn publish --access public"
   },
   "devDependencies": {
-    "prettier": "2.0.4"
+    "prettier": "2.0.4",
+    "typescript": "^3.8.3"
   }
 }
