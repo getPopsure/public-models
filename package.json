@@ -1,0 +1,14 @@
+{
+  "name": "@popsure/models",
+  "version": "0.0.1",
+  "author": "Vincent Audoire <vincent@getpopsure.com>",
+  "license": "MIT",
+  "private": false,
+  "description": "Feather insurance models interface and utilities",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/getPopsure/models",
+  "devDependencies": {
+    "prettier": "2.0.4"
+  }
+}
