@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
     "module": "ESNext",
     "declaration": true,
     "target": "ES5",
+    "moduleResolution": "node",
     "outDir": "./dist",
     "strict": true
   },
