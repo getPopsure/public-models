@@ -1,5 +1,5 @@
-*
-!package.json
-!dist
-!LICENSE
-!Readme.md
+jest.config.js
+babel.config.js
+.prettierrc
+.gitignore
+rollup.config.js

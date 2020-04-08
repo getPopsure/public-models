@@ -10,9 +10,16 @@
   "repository": "https://github.com/getPopsure/models",
   "scripts": {
     "build": "rm -rf dist && rollup -c",
-    "release": "yarn build && yarn publish --access public"
+    "release": "yarn build && yarn publish --access public",
+    "test": "jest"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/jest": "^25.2.1",
+    "babel-jest": "^25.3.0",
+    "jest": "^25.3.0",
     "prettier": "2.0.4",
     "rollup": "^2.3.4",
     "rollup-plugin-typescript2": "^0.27.0",
