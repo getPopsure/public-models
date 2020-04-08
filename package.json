@@ -1,6 +1,6 @@
 {
   "name": "@popsure/public-models",
-  "version": "0.0.2",
+  "version": "0.0.3--alpha-1",
   "author": "Vincent Audoire <vincent@getpopsure.com>",
   "license": "MIT",
   "private": false,
@@ -9,11 +9,13 @@
   "types": "dist/index.d.ts",
   "repository": "https://github.com/getPopsure/models",
   "scripts": {
-    "build": "rm -rf dist && tsc",
+    "build": "rm -rf dist && rollup -c",
     "release": "yarn build && yarn publish --access public"
   },
   "devDependencies": {
     "prettier": "2.0.4",
+    "rollup": "^2.3.4",
+    "rollup-plugin-typescript2": "^0.27.0",
     "typescript": "^3.8.3"
   }
 }
