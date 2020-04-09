@@ -1,4 +1,4 @@
-import { Address } from 'address';
+import { Address } from '../../address';
 
 export function isPartialAddressValid(input: Partial<Address>): boolean {
   const { street, houseNumber, postcode, city, country } = input;
