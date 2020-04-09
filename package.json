@@ -1,6 +1,6 @@
 {
   "name": "@popsure/public-models",
-  "version": "0.0.7--alpha-1",
+  "version": "0.0.7",
   "author": "Vincent Audoire <vincent@getpopsure.com>",
   "license": "MIT",
   "private": false,
