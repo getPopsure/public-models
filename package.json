@@ -17,12 +17,12 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-typescript": "^7.9.0",
-    "@rollup/plugin-typescript": "^3.1.1",
+    "@rollup/plugin-typescript": "^4.1.1",
     "@types/jest": "^25.2.1",
     "babel-jest": "^25.3.0",
     "jest": "^25.3.0",
     "prettier": "2.0.4",
-    "rollup": "^2.3.4",
+    "rollup": "^2.6.1",
     "tslib": "^1.11.1",
     "typescript": "^3.8.3"
   }

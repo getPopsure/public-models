@@ -5,6 +5,7 @@
     "declaration": true,
     "target": "ES5",
     "moduleResolution": "node",
+    "rootDir": "./src",
     "outDir": "./dist",
     "strict": true
   },
