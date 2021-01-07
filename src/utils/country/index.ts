@@ -42,6 +42,5 @@ export const isEEACountry = (country: Country) => {
     'ES',
     'SE',
     'CH',
-    'GB',
   ].includes(code);
 };
