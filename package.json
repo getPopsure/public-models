@@ -1,6 +1,6 @@
 {
   "name": "@popsure/public-models",
-  "version": "0.0.12",
+  "version": "0.0.13-alpha.2",
   "author": "Vincent Audoire <vincent@getpopsure.com>",
   "license": "MIT",
   "private": false,
@@ -25,5 +25,8 @@
     "rollup": "^2.6.1",
     "tslib": "^1.11.1",
     "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@rollup/plugin-image": "^2.0.6"
   }
 }
