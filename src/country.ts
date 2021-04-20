@@ -1,7 +1,7 @@
 import afFlag from './static/flags/af.svg';
 import axFlag from './static/flags/ax.svg';
 import alFlag from './static/flags/al.svg';
-import dzFlag from './static/flags/dz.png';
+import dzFlag from './static/flags/dz.svg';
 import asFlag from './static/flags/as.svg';
 import adFlag from './static/flags/ad.svg';
 import aoFlag from './static/flags/ao.svg';
@@ -153,7 +153,7 @@ import naFlag from './static/flags/na.svg';
 import nrFlag from './static/flags/nr.svg';
 import npFlag from './static/flags/np.svg';
 import nlFlag from './static/flags/nl.svg';
-import anFlag from './static/flags/an.png';
+import anFlag from './static/flags/an.svg';
 import ncFlag from './static/flags/nc.svg';
 import nzFlag from './static/flags/nz.svg';
 import niFlag from './static/flags/ni.svg';
@@ -243,7 +243,7 @@ import yeFlag from './static/flags/ye.svg';
 import zmFlag from './static/flags/zm.svg';
 import zwFlag from './static/flags/zw.svg';
 
-type CountryCode =
+export type CountryCode =
   | 'AF'
   | 'AX'
   | 'AL'

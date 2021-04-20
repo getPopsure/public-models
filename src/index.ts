@@ -4,4 +4,8 @@ export { CalendarDate } from './calendarDate';
 export { Address } from './address';
 export { Country, allCountries, mapCountryFlag } from './country';
 export { isPartialAddressValid } from './utils/address';
-export { countryNameFromAlphaCode, isEEACountry } from './utils/country';
+export {
+  countryNameFromAlphaCode,
+  isEEACountry,
+  associatedCountryFlagForCountryCode,
+} from './utils/country';
