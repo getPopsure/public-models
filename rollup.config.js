@@ -1,5 +1,6 @@
 // rollup.config.js
 import typescript from '@rollup/plugin-typescript';
+import image from '@rollup/plugin-image';
 
 export default {
   input: 'src/index.ts',
@@ -8,5 +9,5 @@ export default {
     format: 'cjs',
     sourcemap: true,
   },
-  plugins: [typescript()],
+  plugins: [typescript(), image()],
 };
