@@ -1,4 +1,9 @@
-import { allCountries, Country } from '../../country';
+import {
+  allCountries,
+  Country,
+  CountryCode,
+  mapCountryFlag,
+} from '../../country';
 
 export function countryNameFromAlphaCode(alphaCode: string) {
   const country = allCountries.find(({ code }: Country) => code === alphaCode);
@@ -44,3 +49,6 @@ export const isEEACountry = (country: Country) => {
     'CH',
   ].includes(code);
 };
+
+export const associatedCountryFlagForCountryCode = (countryCode: CountryCode) =>
+  mapCountryFlag[countryCode];
