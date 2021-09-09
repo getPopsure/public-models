@@ -9,3 +9,4 @@ export {
   isEEACountry,
   associatedCountryFlagForCountryCode,
 } from './utils/country';
+export { universities } from './universities';
