@@ -160,7 +160,7 @@ export const universities = [
   'Evangelische Hochschule Nürnberg',
   'Evangelische Hochschule Tabor',
   'Fachhochschule Aachen (FH)',
-  'Fachhochschule Aachen in Jülich',
+  'Fachhochschule Aachen (FH) in Jülich',
   'Fachhochschule Bielefeld',
   'Fachhochschule Bielefeld - Campus Minden',
   'Fachhochschule Bielefeld - Studienort Gütersloh',
