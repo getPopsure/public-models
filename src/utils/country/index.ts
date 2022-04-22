@@ -79,4 +79,7 @@ export const getAllCountries = (language: languages = 'en'): Country[] =>
     code,
   }));
 
+/**
+ * @deprecated The method will be removed in the next major release. Use getAllCountries() instead.
+ */
 export const allCountries = getAllCountries();
