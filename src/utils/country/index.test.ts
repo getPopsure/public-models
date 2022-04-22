@@ -5,8 +5,8 @@ describe('Countries with alpha code', () => {
     expect(countryNameFromAlphaCode('DE')).toEqual('Germany');
   });
 
-  it('Shouldn’t find country name for incorrect alpha code', () => {
-    expect(countryNameFromAlphaCode('XX')).toBeUndefined();
+  it('Should find country name for "DE" alpha code with german translation', () => {
+    expect(countryNameFromAlphaCode('DE', 'de')).toEqual('Deutschland');
   });
 });
 
