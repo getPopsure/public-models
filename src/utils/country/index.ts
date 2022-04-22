@@ -78,3 +78,5 @@ export const getAllCountries = (language: languages = 'en'): Country[] =>
     name: localeData[language].countries[code],
     code,
   }));
+
+export const allCountries = getAllCountries();

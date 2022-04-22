@@ -9,7 +9,8 @@ export {
   isEEACountry,
   associatedCountryFlagForCountryCode,
   Country,
-  getAllCountries
+  getAllCountries,
+  allCountries
 } from './utils/country';
 export { universities } from './universities';
 export { mapCountryFlag } from './countryFlags';
