@@ -1,6 +1,6 @@
 {
   "name": "@popsure/public-models",
-  "version": "1.0.1-alpha.4",
+  "version": "1.0.1-alpha.5",
   "author": "Vincent Audoire <vincent@getpopsure.com>",
   "license": "MIT",
   "private": false,
@@ -16,7 +16,7 @@
   },
   "repository": "https://github.com/getPopsure/models",
   "scripts": {
-    "build": "rm -rf dist && tsup src/index.ts --format cjs,esm --dts --sourcemap",
+    "build": "rm -rf dist && tsup src/index.ts --format cjs,esm --dts --sourcemap --loader \".svg=dataurl\"",
     "release": "yarn build && yarn publish --access public",
     "test": "jest"
   },
