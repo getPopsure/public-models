@@ -27,6 +27,7 @@ export type VerticalType =
   | 'IT_LIABILITY';
 
 export type TVerticalLookup = {
+  key?: VerticalType;
   group: TAllowedVerticalGroups;
   title: string;
   shortTitle?: string;
@@ -194,8 +195,8 @@ export const groupedVerticals: TVerticalGroupLookup[] = (Object.keys(AllowedVert
     title: AllowedVerticalGroups[verticalGroupKey],
     key: verticalGroupKey,
     icon: iconList[verticalGroupKey],
-    items: Object.values(verticalsLookup)
+    items: (Object.keys(verticalsLookup) as Array<VerticalType>)
+      .map((key) => ({ key, ...verticalsLookup[key] }))
       .filter((vertical) => vertical.group === verticalGroupKey)
-      .map((v) => v),
   })
 );
