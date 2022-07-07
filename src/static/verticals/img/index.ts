@@ -34,3 +34,6 @@ export { default as publicHealth3x } from './public3x.png';
 export { default as disability } from './disability.png'
 export { default as disability2x } from './disability2x.png'
 export { default as disability3x } from './disability3x.png'
+export { default as itliability } from './itliability.png'
+export { default as itliability2x } from './itliability2x.png'
+export { default as itliability3x } from './itliability3x.png'

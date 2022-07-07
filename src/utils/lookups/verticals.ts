@@ -23,7 +23,8 @@ export type VerticalType =
   | 'HOUSEHOLD'
   | 'LEGAL'
   | 'BIKE'
-  | 'DISABILITY';
+  | 'DISABILITY'
+  | 'IT_LIABILITY';
 
 export type TVerticalLookup = {
   group: TAllowedVerticalGroups;
@@ -72,7 +73,7 @@ export const verticalsLookup: Record<VerticalType, TVerticalLookup> = {
   EXPAT_HEALTH: {
     group: 'health',
     title: 'Expat health',
-    shortTitle: 'Expatch health',
+    shortTitle: 'Expat health',
     description: '',
     excerpt: 'Health insurance for those new to Germany',
     icon: img.expat,
@@ -176,6 +177,16 @@ export const verticalsLookup: Record<VerticalType, TVerticalLookup> = {
     icon2x: img.disability2x,
     icon3x: img.disability3x,
   },
+  IT_LIABILITY: {
+    group: 'extracoverage',
+    shortTitle: 'Professional IT liability',
+    title: 'Professional IT liability',
+    excerpt: 'Cover mistakes made as an IT freelancer',
+    description: '',
+    icon: img.itliability,
+    icon2x: img.itliability2x,
+    icon3x: img.itliability3x
+  }
 };
 
 export const groupedVerticals: TVerticalGroupLookup[] = (Object.keys(AllowedVerticalGroups) as Array<TAllowedVerticalGroups>).map(
