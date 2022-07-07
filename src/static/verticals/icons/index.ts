@@ -1,0 +1,12 @@
+export { default as additional } from './additional.svg';
+export { default as back } from './back.svg';
+export { default as basic } from './basic.svg';
+export { default as expert } from './expert.svg';
+export { default as feathers } from './feathers.svg';
+export { default as health } from './health.svg'
+export { default as heart } from './heart.svg';
+export { default as notNeeded } from './notNeeded.svg';
+export { default as restart } from './restart.svg';
+export { default as share } from './share.svg';
+export { default as essentials } from './essentials.svg'
+export { default as extracoverage } from './extracoverage.svg'

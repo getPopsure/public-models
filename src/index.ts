@@ -1,16 +1,19 @@
-export { Gender } from './gender';
-export { LegacyGender } from './gender';
-export { CalendarDate } from './calendarDate';
-export { Address } from './address';
-export { allCountryCodes, Alpha2CountryCode } from './countryCodes';
+export type { Gender } from './gender';
+export type { LegacyGender } from './gender';
+export type { CalendarDate } from './calendarDate';
+export type { Address } from './address';
+export type { Alpha2CountryCode } from './countryCodes';
+export { allCountryCodes } from './countryCodes';
 export { isPartialAddressValid } from './utils/address';
 export {
   countryNameFromAlphaCode,
   isEEACountry,
   associatedCountryFlagForCountryCode,
-  Country,
   getAllCountries,
-  allCountries
+  allCountries,
 } from './utils/country';
+export type { Country } from './utils/country';
 export { universities } from './universities';
 export { mapCountryFlag } from './countryFlags';
+export { groupedVerticals } from './lookups'
+export type { TVerticalGroupLookup, TVerticalLookup, VerticalType } from './lookups'
