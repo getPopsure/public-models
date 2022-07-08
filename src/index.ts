@@ -15,5 +15,3 @@ export {
 export type { Country } from './utils/country';
 export { universities } from './universities';
 export { mapCountryFlag } from './countryFlags';
-export { groupedVerticals } from './lookups'
-export type { TVerticalGroupLookup, TVerticalLookup, VerticalType } from './lookups'
