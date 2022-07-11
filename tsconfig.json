@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
     "module": "ESNext",
     "lib": ["ESNext"],
     "declaration": true,
@@ -10,9 +9,7 @@
     "outDir": "./dist",
     "strict": true,
     "resolveJsonModule": true,
-    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "isolatedModules": true
   },
   "include": ["src/**/*", "custom.d.ts"],
   "exclude": ["node_modules"]
