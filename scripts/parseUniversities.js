@@ -26,7 +26,7 @@ const parser = parse({
   // write each value of the array on the file
   writeStream.write('// This is an auto-generated file, pleased don\'t update it manually\n');
   writeStream.write('export const universities = [\n');
-  data.sort().map(({ Hochschulname }) => writeStream.write(`  '${Hochschulname}',\n`));
+  data.sort((a, b) => (a.Hochschulname > b.Hochschulname) ? 1 : -1).map(({ Hochschulname }) => writeStream.write(`  '${Hochschulname}',\n`));
   writeStream.write('];\n');
 
   // the finish event is emitted when all data has been flushed from the stream
