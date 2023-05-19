@@ -24,7 +24,7 @@ const parser = parse({
   const pathName = writeStream.path;
 
   // write each value of the array on the file
-  writeStream.write('// This is an auto-generated file, pleased don\'n update it manually\n');
+  writeStream.write('// This is an auto-generated file, pleased don\'t update it manually\n');
   writeStream.write('export const universities = [\n');
   data.sort().map(({ Hochschulname }) => writeStream.write(`  '${Hochschulname}',\n`));
   writeStream.write('];\n');
