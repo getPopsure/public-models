@@ -1,4 +1,4 @@
-export const blockedDogBreeds = [
+export const dangerousBreeds = [
   'American Pit Bull Terrier',
   'American Straffordshire Terrier',
   'Bullmastiff',
@@ -14,3 +14,5 @@ export const blockedDogBreeds = [
   'Staffordshire Bullterrier',
   'Tosa Inu',
 ];
+
+export type DangerousBreeds = typeof dangerousBreeds[number];
