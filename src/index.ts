@@ -15,3 +15,4 @@ export {
 export type { Country } from './utils/country';
 export { universities } from './universities';
 export { mapCountryFlag } from './countryFlags';
+export { blockedDogBreeds } from './breeds';
