@@ -1,0 +1,1 @@
+export type ProductCountry = 'de' | 'es' | 'fr'
