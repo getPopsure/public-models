@@ -1,1 +1,1 @@
-export type ProductCountry = 'de' | 'es' | 'fr'
+export type Region = 'de' | 'es' | 'fr';
