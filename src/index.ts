@@ -3,6 +3,7 @@ export type { LegacyGender } from './gender';
 export type { CalendarDate } from './calendarDate';
 export type { Address } from './address';
 export type { Alpha2CountryCode } from './countryCodes';
+export type { Region } from './region';
 export { allCountryCodes } from './countryCodes';
 export { isPartialAddressValid } from './utils/address';
 export {
