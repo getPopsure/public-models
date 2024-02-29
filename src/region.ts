@@ -1,1 +1,2 @@
-export type Region = 'de' | 'es' | 'fr';
+export const regions = ['de', 'es', 'fr'] as const;
+export type Region = typeof regions[number];
