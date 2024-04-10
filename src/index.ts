@@ -10,11 +10,10 @@ export { isPartialAddressValid } from './utils/address';
 export {
   countryNameFromAlphaCode,
   isEEACountry,
-  associatedCountryFlagForCountryCode,
   getAllCountries,
   allCountries,
 } from './utils/country';
 export type { Country } from './utils/country';
 export { universities } from './universities';
-export { mapCountryFlag } from './countryFlags';
 export { breeds, Breeds, dangerousBreeds, DangerousBreeds } from './breeds';
+
