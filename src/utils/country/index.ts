@@ -2,7 +2,6 @@ import { Alpha2CountryCode, allCountryCodes } from '../../countryCodes';
 import * as LocaleEN from '../../static/countryNames/en.json';
 import * as LocaleDE from '../../static/countryNames/de.json';
 
-import { mapCountryFlag } from '../../countryFlags';
 
 type languages = 'en' | 'de';
 
@@ -63,10 +62,6 @@ export const isEEACountry = (country: Country) => {
     'CH',
   ].includes(code);
 };
-
-export const associatedCountryFlagForCountryCode = (
-  alphaCode: Alpha2CountryCode
-) => mapCountryFlag[alphaCode];
 
 export interface Country {
   name: string;
