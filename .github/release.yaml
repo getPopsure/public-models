@@ -1,0 +1,53 @@
+name: Release
+
+on:
+  release:
+    branches:
+      - main
+    types: [ published ]
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          registry-url: 'https://npm.pkg.github.com'
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: yarn install
+        run: yarn install
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PKG_GITHUB_TOKEN }}
+
+      - name: Set env
+        run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" | sed 's/v//' >> $GITHUB_ENV
+
+      - name: Configure GitHub
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+
+      - name: Build new version
+        run: yarn build
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@getpopsure'
+
+      - name: Publish new version
+        run: yarn publish  --access public --new-version $RELEASE_VERSION --no-git-tag-version
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PKG_GITHUB_TOKEN }}
+
+      - name: Push new package.json version
+        run: |
+          git commit -am "Bumped package.json to $RELEASE_VERSION"
+          git push origin HEAD:main
