@@ -24,7 +24,7 @@ jobs:
       - name: yarn install
         run: yarn install
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_PKG_GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set env
         run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" | sed 's/v//' >> $GITHUB_ENV
@@ -45,7 +45,7 @@ jobs:
       - name: Publish new version
         run: yarn publish  --access public --new-version $RELEASE_VERSION --no-git-tag-version
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_PKG_GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push new package.json version
         run: |
