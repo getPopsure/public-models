@@ -1,0 +1,10 @@
+#!/bin/sh
+
+branch="$(git rev-parse --abbrev-ref HEAD)"
+
+if [ "$branch" = "main" ]; then
+  echo "You're trying to commit directly to the main branch. Please create a pull request instead."
+  exit 1
+fi
+
+yarn test

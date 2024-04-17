@@ -23,7 +23,8 @@
   },
   "scripts": {
     "build": "rm -rf dist && tsup src/index.ts --format cjs,esm --dts --sourcemap --minify --loader \".svg=dataurl\"",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky || true"
   },
   "devDependencies": {
     "@babel/core": "^7.24.4",
@@ -32,6 +33,7 @@
     "@types/jest": "^25.2.1",
     "babel-jest": "^25.3.0",
     "csv-parse": "^5.3.9",
+    "husky": "^9.0.11",
     "jest": "^27.5.1",
     "prettier": "2.0.4",
     "ts-jest": "^27.1.4",

@@ -24,6 +24,7 @@ jobs:
       - name: yarn install
         run: yarn install
         env:
+          HUSKY: 0
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set env
