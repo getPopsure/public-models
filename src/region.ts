@@ -1,2 +1,21 @@
-export const regions = ['de', 'es', 'fr'] as const;
+export const regions = [
+  'de',
+  'es',
+  'fr',
+  'nl',
+  'it',
+  'be',
+  'se',
+  'mt',
+  'at',
+  'fi',
+  'cy',
+  'gr',
+  'ee',
+  'pt',
+  'lt',
+  'hr',
+  'lv',
+  'mc',
+] as const;
 export type Region = typeof regions[number];
