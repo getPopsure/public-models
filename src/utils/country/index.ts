@@ -1,16 +1,19 @@
-import { Alpha2CountryCode, allCountryCodes } from '../../countryCodes';
+import {
+  Alpha2CountryCode,
+  Alpha2CountryOrRegionCode,
+  allCountryCodes,
+} from '../../countryCodes';
 import * as LocaleEN from '../../static/countryNames/en.json';
 import * as LocaleDE from '../../static/countryNames/de.json';
 import { mapCountryFlag } from '../../countryFlags';
 
-
 type languages = 'en' | 'de';
 
-export type LocaleDataType = {
+type LocaleDataType = {
   [key in languages]: {
     locale: string;
     countries: {
-      [key in Alpha2CountryCode]: string;
+      [key in Alpha2CountryOrRegionCode]: string;
     };
   };
 };
@@ -22,7 +25,14 @@ const localeData: LocaleDataType = {
 
 export function countryNameFromAlphaCode(
   alphaCode: Alpha2CountryCode,
-  language: (languages) = 'en'
+  language: languages = 'en'
+) {
+  return localeData[language].countries[alphaCode];
+}
+
+export function countryOrRegionNameFromAlphaCode(
+  alphaCode: Alpha2CountryOrRegionCode,
+  language: languages = 'en'
 ) {
   return localeData[language].countries[alphaCode];
 }
