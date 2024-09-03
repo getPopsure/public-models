@@ -67,7 +67,6 @@ export const allCountryCodes = [
   'ER',
   'EE',
   'ET',
-  'EU',
   'FK',
   'FO',
   'FJ',
@@ -253,3 +252,5 @@ export const allCountryCodes = [
 ] as const;
 
 export type Alpha2CountryCode = typeof allCountryCodes[number];
+
+export type Alpha2CountryOrRegionCode = Alpha2CountryCode | 'EU';

@@ -1,7 +1,7 @@
+import { Alpha2CountryCode, Alpha2CountryOrRegionCode } from './countryCodes';
 
-import { Alpha2CountryCode } from './countryCodes';
-
-const basePath = 'https://assets.cdn.feather-insurance.com/assets/images/flags/';
+const basePath =
+  'https://assets.cdn.feather-insurance.com/assets/images/flags/';
 
 export const mapCountryFlag: { [K in Alpha2CountryCode]: string } = {
   AF: `${basePath}af.png`,
@@ -254,6 +254,11 @@ export const mapCountryFlag: { [K in Alpha2CountryCode]: string } = {
   AQ: `${basePath}aq.png`,
   AS: `${basePath}as.png`,
   YT: `${basePath}fr.png`,
+};
+
+export const mapCountryOrRegionFlag: {
+  [K in Alpha2CountryOrRegionCode]: string;
+} = {
+  ...mapCountryFlag,
   EU: `${basePath}eu.png`,
 };
-	
