@@ -67,6 +67,7 @@ export const allCountryCodes = [
   'ER',
   'EE',
   'ET',
+  'EU',
   'FK',
   'FO',
   'FJ',

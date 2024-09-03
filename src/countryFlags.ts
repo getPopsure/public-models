@@ -254,5 +254,6 @@ export const mapCountryFlag: { [K in Alpha2CountryCode]: string } = {
   AQ: `${basePath}aq.png`,
   AS: `${basePath}as.png`,
   YT: `${basePath}fr.png`,
+  EU: `${basePath}eu.png`,
 };
 	
