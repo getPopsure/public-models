@@ -4,6 +4,7 @@ export const breeds = [
   'Akita Inu',
   'Alano',
   'Alaskan Malamute',
+  'American bandogg mastiff',
   'Anglo Francais de Petite Venerie',
   'Aregeois',
   'Australian Cattle Dog',
@@ -35,7 +36,7 @@ export const breeds = [
   'Bohemian rough beard',
   'Bolognese',
   'Bouvier of the Flandre',
-  'boxer',
+  'Boxer',
   'Bracco Italiano',
   'Alpine Dachsbracke',
   'Balkan bracket',
@@ -1304,3 +1305,29 @@ export const dangerousBreeds = [
 ] as const;
 
 export type DangerousBreeds = typeof dangerousBreeds[number];
+
+export const dangerousBreedsSpain: Breeds[] = [
+  'Tosa Inu',
+  'Akita Inu',
+  'Rottweiler',
+  'Fila Brasileiro',
+  'Dogo Argentino',
+  'Pit Bull Terrier',
+  'Staffordshire Bull Terrier',
+  'American Staffordshire Terrier',
+  'Doberman',
+  'American Bully',
+  'American Akita',
+  'American Pit Bull Terrier',
+  'Bordeaux Mastiff',
+  'Tibetan mastiff',
+  'Neapolitan Mastiff',
+  'Perro de Presa Canario',
+  'Perro de Presa Mallorquin',
+  'Bull terrier',
+  'Boxer',
+  'Bullmastiff',
+  'American bandogg mastiff',
+] as const;
+
+export type DangerousBreedsSpain = typeof dangerousBreedsSpain[number];
