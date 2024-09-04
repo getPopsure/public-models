@@ -21,4 +21,11 @@ export {
 export type { Country } from './utils/country';
 export { universities } from './universities';
 export { mapCountryFlag, mapCountryOrRegionFlag } from './countryFlags';
-export { breeds, Breeds, dangerousBreeds, DangerousBreeds } from './breeds';
+export {
+  breeds,
+  Breeds,
+  dangerousBreeds,
+  dangerousBreedsSpain,
+  DangerousBreeds,
+  DangerousBreedsSpain,
+} from './breeds';
