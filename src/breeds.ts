@@ -1306,7 +1306,7 @@ export const dangerousBreeds = [
 
 export type DangerousBreeds = typeof dangerousBreeds[number];
 
-export const dangerousBreedsSpain: Breeds[] = [
+export const dangerousBreedsSpain = [
   'Tosa Inu',
   'Akita Inu',
   'Rottweiler',
