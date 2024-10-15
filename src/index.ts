@@ -24,6 +24,8 @@ export { mapCountryFlag, mapCountryOrRegionFlag } from './countryFlags';
 export {
   breeds,
   Breeds,
+  breedsSpain,
+  BreedsSpain,
   dangerousBreeds,
   dangerousBreedsSpain,
   DangerousBreeds,
