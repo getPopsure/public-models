@@ -53,6 +53,18 @@ describe('getAllCountries', () => {
       ])
     );
   });
+
+  it('Should return all countries with spanish translation', () => {
+    const countries = getAllCountries('es');
+    expect(countries).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          code: 'DE',
+          name: 'Alemania',
+        }),
+      ])
+    );
+  });
 });
 
 describe('Is EEA Country', () => {

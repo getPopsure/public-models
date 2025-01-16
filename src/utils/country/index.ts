@@ -5,9 +5,10 @@ import {
 } from '../../countryCodes';
 import * as LocaleEN from '../../static/countryNames/en.json';
 import * as LocaleDE from '../../static/countryNames/de.json';
+import * as LocaleES from '../../static/countryNames/es.json';
 import { mapCountryFlag } from '../../countryFlags';
 
-type languages = 'en' | 'de';
+type languages = 'en' | 'de' | 'es';
 
 type LocaleDataType = {
   [key in languages]: {
@@ -21,6 +22,7 @@ type LocaleDataType = {
 const localeData: LocaleDataType = {
   en: LocaleEN,
   de: LocaleDE,
+  es: LocaleES,
 };
 
 export function countryNameFromAlphaCode(
