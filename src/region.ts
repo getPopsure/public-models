@@ -17,6 +17,7 @@ export const regions = [
   'hr',
   'lv',
   'mc',
-  'eu'
+  'eu',
+  'ie',
 ] as const;
 export type Region = typeof regions[number];
