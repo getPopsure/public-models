@@ -1,24 +1,31 @@
 export const regions = [
-  'de',
-  'es',
-  'fr',
-  'nl',
-  'it',
-  'be',
-  'se',
-  'mt',
-  'at',
-  'fi',
-  'cy',
-  'gr',
-  'ee',
-  'pt',
-  'lt',
-  'hr',
-  'lv',
-  'mc',
-  'eu',
-  'ie',
-  'hu',
+  'at', // Austria
+  'be', // Belgium
+  'bg', // Bulgaria
+  'hr', // Croatia
+  'cy', // Cyprus
+  'cz', // Czechia
+  'de', // Germany
+  'dk', // Denmark
+  'ee', // Estonia
+  'es', // Spain
+  'fi', // Finland
+  'fr', // France
+  'gr', // Greece
+  'hu', // Hungary
+  'ie', // Ireland
+  'it', // Italy
+  'lt', // Lithuania
+  'lu', // Luxembourg
+  'lv', // Latvia
+  'mt', // Malta
+  'nl', // Netherlands
+  'pl', // Poland
+  'pt', // Portugal
+  'ro', // Romania
+  'si', // Slovenia
+  'se', // Sweden
+  'sk', // Slovakia
+  'mc', // Monaco
 ] as const;
 export type Region = typeof regions[number];
