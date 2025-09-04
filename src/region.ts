@@ -27,5 +27,6 @@ export const regions = [
   'se', // Sweden
   'sk', // Slovakia
   'mc', // Monaco
+  'eu', // Europe
 ] as const;
 export type Region = typeof regions[number];
