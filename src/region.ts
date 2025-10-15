@@ -32,6 +32,7 @@ export const regions = [
 export type Region = typeof regions[number];
 
 export const worldRegions = [
+  ...regions,
   'af', // Afghanistan
   'al', // Albania
   'dz', // Algeria
@@ -45,14 +46,12 @@ export const worldRegions = [
   'am', // Armenia
   'aw', // Aruba
   'au', // Australia
-  'at', // Austria
   'az', // Azerbaijan
   'bs', // Bahamas
   'bh', // Bahrain
   'bd', // Bangladesh
   'bb', // Barbados
   'by', // Belarus
-  'be', // Belgium
   'bz', // Belize
   'bj', // Benin
   'bm', // Bermuda
@@ -64,7 +63,6 @@ export const worldRegions = [
   'br', // Brazil
   'io', // British Indian Ocean Territory
   'bn', // Brunei Darussalam
-  'bg', // Bulgaria
   'bf', // Burkina Faso
   'bi', // Burundi
   'kh', // Cambodia
@@ -85,11 +83,7 @@ export const worldRegions = [
   'ck', // Cook Islands
   'cr', // Costa Rica
   'ci', // Côte d'Ivoire
-  'hr', // Croatia
   'cu', // Cuba
-  'cy', // Cyprus
-  'cz', // Czechia
-  'dk', // Denmark
   'dj', // Djibouti
   'dm', // Dominica
   'do', // Dominican Republic
@@ -98,23 +92,18 @@ export const worldRegions = [
   'sv', // El Salvador
   'gq', // Equatorial Guinea
   'er', // Eritrea
-  'ee', // Estonia
   'et', // Ethiopia
   'fk', // Falkland Islands (Malvinas)
   'fo', // Faroe Islands
   'fj', // Fiji
-  'fi', // Finland
-  'fr', // France
   'gf', // French Guiana
   'pf', // French Polynesia
   'tf', // French Southern Territories
   'ga', // Gabon
   'gm', // Gambia
   'ge', // Georgia
-  'de', // Germany
   'gh', // Ghana
   'gi', // Gibraltar
-  'gr', // Greece
   'gl', // Greenland
   'gd', // Grenada
   'gp', // Guadeloupe
@@ -128,15 +117,12 @@ export const worldRegions = [
   'va', // Holy See (Vatican City State)
   'hn', // Honduras
   'hk', // Hong Kong
-  'hu', // Hungary
   'is', // Iceland
   'in', // India
   'id', // Indonesia
   'ir', // Iran
   'iq', // Iraq
-  'ie', // Ireland
   'il', // Israel
-  'it', // Italy
   'jm', // Jamaica
   'jp', // Japan
   'jo', // Jordan
@@ -148,14 +134,12 @@ export const worldRegions = [
   'kw', // Kuwait
   'kg', // Kyrgyzstan
   'la', // Lao People's Democratic Republic
-  'lv', // Latvia
   'lb', // Lebanon
   'ls', // Lesotho
   'lr', // Liberia
   'ly', // Libya
   'li', // Liechtenstein
   'lt', // Lithuania
-  'lu', // Luxembourg
   'mo', // Macao
   'mk', // North Macedonia
   'mg', // Madagascar
@@ -163,7 +147,6 @@ export const worldRegions = [
   'my', // Malaysia
   'mv', // Maldives
   'ml', // Mali
-  'mt', // Malta
   'mh', // Marshall Islands
   'mq', // Martinique
   'mr', // Mauritania
@@ -172,7 +155,6 @@ export const worldRegions = [
   'mx', // Mexico
   'fm', // Micronesia, Federated States of
   'md', // Moldova, Republic of
-  'mc', // Monaco
   'mn', // Mongolia
   'ms', // Montserrat
   'me', // Montenegro
@@ -182,7 +164,6 @@ export const worldRegions = [
   'na', // Namibia
   'nr', // Nauru
   'np', // Nepal
-  'nl', // Netherlands
   'nc', // New Caledonia
   'nz', // New Zealand
   'ni', // Nicaragua
@@ -202,12 +183,9 @@ export const worldRegions = [
   'pe', // Peru
   'ph', // Philippines
   'pn', // Pitcairn
-  'pl', // Poland
-  'pt', // Portugal
   'pr', // Puerto Rico
   'qa', // Qatar
   're', // Réunion
-  'ro', // Romania
   'ru', // Russian Federation
   'rw', // Rwanda
   'sh', // Saint Helena, Ascension and Tristan da Cunha
@@ -224,19 +202,15 @@ export const worldRegions = [
   'sc', // Seychelles
   'sl', // Sierra Leone
   'sg', // Singapore
-  'sk', // Slovakia
-  'si', // Slovenia
   'sb', // Solomon Islands
   'so', // Somalia
   'za', // South Africa
   'gs', // South Georgia and the South Sandwich Islands
-  'es', // Spain
   'lk', // Sri Lanka
   'sd', // Sudan
   'sr', // Suriname
   'sj', // Svalbard and Jan Mayen
   'sz', // Eswatini
-  'se', // Sweden
   'ch', // Switzerland
   'sy', // Syrian Arab Republic
   'tw', // Taiwan
