@@ -261,4 +261,5 @@ export const mapCountryOrRegionFlag: {
 } = {
   ...mapCountryFlag,
   EU: `${basePath}eu.png`,
+  WW: `${basePath}ww.png`,
 };

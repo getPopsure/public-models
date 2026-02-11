@@ -251,6 +251,6 @@ export const allCountryCodes = [
   'SS',
 ] as const;
 
-export type Alpha2CountryCode = typeof allCountryCodes[number];
+export type Alpha2CountryCode = (typeof allCountryCodes)[number];
 
-export type Alpha2CountryOrRegionCode = Alpha2CountryCode | 'EU';
+export type Alpha2CountryOrRegionCode = Alpha2CountryCode | 'EU' | 'WW';
