@@ -28,12 +28,12 @@ export const regions = [
   'sk', // Slovakia
   'mc', // Monaco
   'eu', // Europe
-  'ww', // Worldwide
 ] as const;
 export type Region = typeof regions[number];
 
 export const worldRegions = [
   ...regions,
+  'ww', // Worldwide
   'af', // Afghanistan
   'al', // Albania
   'dz', // Algeria
@@ -140,7 +140,6 @@ export const worldRegions = [
   'lr', // Liberia
   'ly', // Libya
   'li', // Liechtenstein
-  'lt', // Lithuania
   'mo', // Macao
   'mk', // North Macedonia
   'mg', // Madagascar
@@ -260,3 +259,70 @@ export const worldRegions = [
 ] as const;
 
 export type WorldRegions = typeof worldRegions[number];
+
+export const supportedRegions: readonly WorldRegions[] = [
+  'de',
+  'es',
+  'fr',
+  'be',
+  'gr',
+  'it',
+  'mt',
+  'nl',
+  'se',
+  'pt',
+  'ie',
+  'hu',
+  'at',
+  'bg',
+  'hr',
+  'cy',
+  'cz',
+  'dk',
+  'ee',
+  'fi',
+  'lv',
+  'lt',
+  'lu',
+  'ro',
+  'si',
+  'sk',
+  'ae',
+  'th',
+  'sg',
+  'mx',
+  'ca',
+  'ph',
+  'jp',
+  'vn',
+  'tr',
+  'id',
+  'hk',
+  'nz',
+  'my',
+  'ch',
+  'br',
+  'kh',
+  'pa',
+  'co',
+  'kr',
+  'cr',
+  'in',
+  'za',
+  'cl',
+  'bd',
+  'la',
+  'rw',
+  'jo',
+  'ma',
+  'cm',
+  'mz',
+  'sn',
+  'ug',
+  'ar',
+  'ke',
+  'et',
+  'bz',
+  'us',
+  'ww',
+];

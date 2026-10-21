@@ -6,7 +6,7 @@ export type {
   Alpha2CountryCode,
   Alpha2CountryOrRegionCode,
 } from './countryCodes';
-export { regions, worldRegions } from './region';
+export { regions, supportedRegions, worldRegions } from './region';
 export type { Region, WorldRegions } from './region';
 export { allCountryCodes } from './countryCodes';
 export { isPartialAddressValid } from './utils/address';
