@@ -28,12 +28,12 @@ export const regions = [
   'sk', // Slovakia
   'mc', // Monaco
   'eu', // Europe
-  'ww', // Worldwide
 ] as const;
 export type Region = typeof regions[number];
 
 export const worldRegions = [
   ...regions,
+  'ww', // Worldwide
   'af', // Afghanistan
   'al', // Albania
   'dz', // Algeria

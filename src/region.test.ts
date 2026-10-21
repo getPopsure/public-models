@@ -3,9 +3,19 @@ import { mapCountryOrRegionFlag } from './countryFlags';
 import { Alpha2CountryOrRegionCode } from './countryCodes';
 import { regions, supportedRegions, worldRegions } from './region';
 
+describe('regions', () => {
+  it('Should not include worldwide', () => {
+    expect(regions).not.toContain('ww');
+  });
+});
+
 describe('worldRegions', () => {
   it('Should not contain duplicates', () => {
     expect(new Set(worldRegions).size).toEqual(worldRegions.length);
+  });
+
+  it('Should include worldwide', () => {
+    expect(worldRegions).toContain('ww');
   });
 
   it('Should contain every region', () => {
